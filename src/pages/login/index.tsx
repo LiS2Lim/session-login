@@ -1,7 +1,9 @@
+import './login.css';
+
 export default () => {
 	return (
-		<>
-		login
-		</>
+		<div className='container'>
+			login
+		</div>
 	)
 }
