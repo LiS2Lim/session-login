@@ -1,7 +1,7 @@
 export default () => {
 	return (
 		<>
-		home
+		404
 		</>
 	)
 }
