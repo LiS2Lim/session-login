@@ -25,6 +25,8 @@ export default () => {
 				if(res.status === 200) {
 					sessionStorage.setItem('login','true')
 					Navigate("/");
+				} else {
+					alert('IDまたはPWが違います');
 				};
 			})
 		} catch(err) {
