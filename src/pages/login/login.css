@@ -165,14 +165,14 @@ input[type="submit"] {
 .signinForm {
 }
 .signupForm {
-	transform: rotateY(-90deg);
+	transform: translateX(900px);
 }
 
 .fadeOut {
-	transform: rotateY(-90deg);
+	transform: translateX(900px);
 	transition: 0.5s;
 }
 .fadeIn {
-	transform: rotateY(0deg);
+	transform: translateX(0);
 	transition: 0.5s;
 }
