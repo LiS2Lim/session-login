@@ -36,6 +36,22 @@ export default () => {
 			console.error(err);
 		};
 	};
+	const fetchSignup = (e:React.FormEvent<HTMLFormElement>) => {
+		e.preventDefault();
+		try {
+			fetch('http://api.li-lim.net/test/signup',{
+				method: "POST",
+				headers: {
+					'Content-Type': 'application/json'
+				},
+				body: JSON.stringify({
+					email
+				}),
+			})
+		} catch(err) {
+			console.error(err);
+		}
+	}
 	useEffect(()=>{
 		if(sigininclass === '') {
 				setSigninclass('form signinForm');
@@ -55,7 +71,7 @@ export default () => {
 	return (
 		<div className='container'>
 			<div className='box'>
-				
+				<div className='form'></div>
 				{/* ログインフォーム */}
 				<form onSubmit={fetchLogin} className={sigininclass}>
 					<h2>ログイン</h2>
@@ -77,7 +93,7 @@ export default () => {
 				</form>
 				
 				{/* 会員登録フォーム */}
-				<form onSubmit={fetchLogin} className={siginupclass}>
+				<form onSubmit={fetchSignup} className={siginupclass}>
 					<h2>新規登録</h2>
 					<div className='inputBox'>
 						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} required />
