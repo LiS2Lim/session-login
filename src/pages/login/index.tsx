@@ -72,6 +72,7 @@ export default () => {
 		<div className='container'>
 			<div className='box'>
 				<div className='form'></div>
+				
 				{/* ログインフォーム */}
 				<form onSubmit={fetchLogin} className={sigininclass}>
 					<h2>ログイン</h2>
@@ -87,7 +88,7 @@ export default () => {
 					</div>
 					<div className='links'>
 						<a href='javascript:void(0)'>パスワードをお忘れの方</a>
-						<a href='javascript:void(0)' onClick={()=>{setIsLoginPage(!isLoginPage)}}>新規登録</a>
+						<a href='javascript:void(0)' onClick={()=>{setIsLoginPage(!isLoginPage)}}>新規登録へ</a>
 					</div>
 					<input type='submit' value="ログイン"/>
 				</form>
@@ -102,7 +103,7 @@ export default () => {
 					</div>
 					<div className='links'>
 						<a href='javascript:void(0)'></a>
-						<a className='loginLink' href='javascript:void(0)' onClick={()=>{setIsLoginPage(!isLoginPage)}}>ログイン</a>
+						<a href='javascript:void(0)' onClick={()=>{setIsLoginPage(!isLoginPage)}}>ログインへ</a>
 					</div>
 					<input type='submit' value="確認メール"/>
 				</form>

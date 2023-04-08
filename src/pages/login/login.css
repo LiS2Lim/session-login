@@ -139,10 +139,6 @@
 	text-decoration: none;
 }
 
-.loginLink {
-	margin-left: auto;
-}
-
 .links a:hover,
 .links a:nth-child(2) {
 	color: #45F3FF;
