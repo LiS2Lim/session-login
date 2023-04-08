@@ -47,6 +47,14 @@ export default () => {
 				body: JSON.stringify({
 					email
 				}),
+			}).then(res => {
+				if(res.status === 200) {
+					alert('確認メールが送られました。メールボックスをご確認し、登録を完了してください');
+					setEmail('');
+					setIsLoginPage(true);
+				}
+			}).catch(() => {
+				alert('メールアドレスをご確認ください');
 			})
 		} catch(err) {
 			console.error(err);
@@ -97,7 +105,7 @@ export default () => {
 				<form onSubmit={fetchSignup} className={siginupclass}>
 					<h2>新規登録</h2>
 					<div className='inputBox'>
-						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} required />
+						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email} required />
 						<span>メールアドレス</span>
 						<i></i>
 					</div>
