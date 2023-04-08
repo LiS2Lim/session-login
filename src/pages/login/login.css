@@ -139,6 +139,10 @@
 	text-decoration: none;
 }
 
+.loginLink {
+	margin-left: auto;
+}
+
 .links a:hover,
 .links a:nth-child(2) {
 	color: #45F3FF;
@@ -160,4 +164,19 @@ input[type="submit"] {
 
 input[type="submit"] {
 	opacity: 0.8;
+}
+
+.signinForm {
+}
+.signupForm {
+	transform: rotateY(-90deg);
+}
+
+.fadeOut {
+	transform: rotateY(-90deg);
+	transition: 0.5s;
+}
+.fadeIn {
+	transform: rotateY(0deg);
+	transition: 0.5s;
 }
