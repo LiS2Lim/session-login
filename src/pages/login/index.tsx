@@ -53,7 +53,7 @@ export default () => {
 					setEmail('');
 					setIsLoginPage(true);
 				}
-				if(res.status === 203) {
+				if(res.status === 202) {
 					alert('すでに登録済のメールです。パスワードを忘れた場合はパスワードを探すメニューをご利用ください。');
 				}
 				if(res.status === 204) {
