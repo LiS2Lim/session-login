@@ -48,10 +48,16 @@ export default () => {
 					email
 				}),
 			}).then(res => {
-				if(res.status === 200) {
-					alert('確認メールが送られました。メールボックスをご確認し、登録を完了してください');
+				if(res.status === 201) {
+					alert('確認メールが送られました。メールボックスをご確認し、登録を完了してください。');
 					setEmail('');
 					setIsLoginPage(true);
+				}
+				if(res.status === 203) {
+					alert('すでに登録済のメールです。パスワードを忘れた場合はパスワードを探すメニューをご利用ください。');
+				}
+				if(res.status === 204) {
+					alert("予期せぬエラーがありました。管理者にご連絡ください。");
 				}
 			}).catch(() => {
 				alert('メールアドレスをご確認ください');
