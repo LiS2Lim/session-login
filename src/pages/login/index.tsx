@@ -15,7 +15,7 @@ export default () => {
 			Navigate("/");
 		};
 		try {
-			fetch('http://erp.li-lim.net/login',{
+			fetch('http://api.li-lim.net/test/login',{
 				method: "POST",
 				headers: {
 					'Content-Type': 'application/json' 
