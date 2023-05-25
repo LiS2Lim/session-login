@@ -5,6 +5,7 @@ import './login.css';
 export default () => {
 	const [ email, setEmail ] = useState<string>('');
 	const [ password, setPassword ] = useState<string>('');
+	const [ name, setName ] = useState<string>('');
 	const [ isLoginPage, setIsLoginPage ] = useState<boolean>(true);
 	const [ sigininclass, setSigninclass ] = useState<string>('');
 	const [ siginupclass, setSignupclass ] = useState<string>('');
@@ -45,7 +46,9 @@ export default () => {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify({
-					email
+					email,
+					password,
+					name,
 				}),
 			}).then(res => {
 				if(res.status === 201) {
@@ -112,6 +115,8 @@ export default () => {
 					<h2>新規登録</h2>
 					<div className='inputBox'>
 						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email} required />
+						<input type='text' onChange={(e)=>{setPassword(e.target.value)}} value={password} required />
+						<input type='text' onChange={(e)=>{setName(e.target.value)}} value={name} required />
 						<span>メールアドレス</span>
 						<i></i>
 					</div>
