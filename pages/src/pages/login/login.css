@@ -1,0 +1,178 @@
+.container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #23242A;
+}
+
+.box {
+	position: relative;
+	width: 380px;
+	height: 420px;
+	background: #1C1C1C;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.box:before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	background: linear-gradient(0deg, transparent, #45F3FF, #45F3FF);
+	transform-origin: bottom right;
+	animation: animate 6s linear infinite;
+}
+
+.box:after {
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 380px;
+	height: 420px;
+	background: linear-gradient(0deg, transparent, #45F3FF, #45F3FF);
+	transform-origin: bottom right;
+	animation: animate 6s linear infinite;
+	animation-delay: -3s;
+}
+
+@keyframes animate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.form {
+	position: absolute;
+	inset: 2px;
+	border-radius: 8px;
+	background: #28292D;
+	z-index: 10;
+	padding: 50px 40px;
+	display: flex;
+	flex-direction: column;
+}
+
+.form h2 {
+	color: #45F4FF;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: 0.1em;
+}
+
+.inputBox {
+	position: relative;
+	width: 300px;
+	margin-top: 35px;
+}
+
+.inputBox input {
+	position: relative;
+	width: 100%;
+	padding: 20px 10px 10px;
+	background: transparent;
+	border: none;
+	outline: none;
+	color: #23242A;
+	font-size: 1em;
+	letter-spacing: 0.05em;
+	z-index: 10;
+}
+
+.inputBox span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 20px 0 10px;
+	font-size: 1em;
+	color: #8F8F8F;
+	pointer-events: none;
+	letter-spacing: 0.05em;
+	transition: 0.5s;
+}
+
+.inputBox input:valid ~span,
+.inputBox input:focus ~span {
+	color: #45F3FF;
+	transform: translateY(-34px);
+	font-size: 0.7em;
+}
+
+.inputBox i {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background: #45F4FF;
+	border-radius: 4px;
+	transition: 0.5s;
+	pointer-events: none;
+	z-index: 9;
+}
+
+.inputBox input:valid ~i,
+.inputBox input:focus ~i {
+	height: 44px;
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.links a {
+	margin: 20px 0;
+	font-size: 0.75em;
+	color: #8F8F8F;
+	text-decoration: none;
+}
+
+.links a:hover,
+.links a:nth-child(2) {
+	color: #45F3FF;
+}
+
+input[type="submit"] {
+	border: none;
+	outline: none;
+	background: #45F3FF;
+	padding: 11px 25px;
+	width: 180px;
+	height: 2.5em;
+	margin: 20px auto 0;
+	border-radius: 4px;
+	font-weight: 600;
+	cursor: pointer;
+	color: #000;
+}
+
+input[type="submit"] {
+	opacity: 0.8;
+}
+
+.signinForm {
+}
+.signupForm {
+	transform: translateX(900px);
+}
+
+.fadeOut {
+	transform: translateX(900px);
+	transition: 0.5s;
+}
+.fadeIn {
+	transform: translateX(0);
+	transition: 0.5s;
+}

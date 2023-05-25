@@ -5,7 +5,6 @@ import './login.css';
 export default () => {
 	const [ email, setEmail ] = useState<string>('');
 	const [ password, setPassword ] = useState<string>('');
-	const [ userName, setUserName ] = useState<string>('');
 	const [ isLoginPage, setIsLoginPage ] = useState<boolean>(true);
 	const [ sigininclass, setSigninclass ] = useState<string>('');
 	const [ siginupclass, setSignupclass ] = useState<string>('');
@@ -46,13 +45,11 @@ export default () => {
 					'Content-Type': 'application/json'
 				},
 				body: JSON.stringify({
-					email,
-					password,
-					userName,
+					email
 				}),
 			}).then(res => {
 				if(res.status === 201) {
-					alert('登録が完了しました。ログインしてください。');
+					alert('確認メールが送られました。メールボックスをご確認し、登録を完了してください。');
 					setEmail('');
 					setIsLoginPage(true);
 				}
@@ -115,8 +112,6 @@ export default () => {
 					<h2>新規登録</h2>
 					<div className='inputBox'>
 						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email} required />
-						<input type='text' onChange={(e)=>{setPassword(e.target.value)}} value={password} required />
-						<input type='text' onChange={(e)=>{setUserName(e.target.value)}} value={userName} required />
 						<span>メールアドレス</span>
 						<i></i>
 					</div>

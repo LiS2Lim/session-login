@@ -1,0 +1,154 @@
+[33mcommit fa4f9454ced1e54661cd69d317ff5cc0c6720312[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Tue May 23 04:47:09 2023 +0000
+
+    Add 'pages/' from commit 'c2c9abe87572d3fa1326bfad7a678d74972cac05'
+    
+    git-subtree-dir: pages
+    git-subtree-mainline: c2c9abe87572d3fa1326bfad7a678d74972cac05
+    git-subtree-split: c2c9abe87572d3fa1326bfad7a678d74972cac05
+
+[33mcommit c2c9abe87572d3fa1326bfad7a678d74972cac05[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Tue May 23 04:37:29 2023 +0000
+
+    Chore: Add build files
+
+[33mcommit 6fe7438b6b0eb241f56b24f13f13d3c6797a8181[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Tue Apr 11 14:23:50 2023 +0000
+
+    Feat: Add logout button in home
+
+[33mcommit 4da85f4d64514dbcaa7b265fed4ddf7d6e67025c[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 9 14:59:19 2023 +0000
+
+    Fix: Change api address for login
+
+[33mcommit 3536c5094c4b9a44b7f1ffdbd71e4ff491ff66bd[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 9 06:54:39 2023 +0000
+
+    Fix: Change HTTP status to 202 from 203 when Email is already registered
+
+[33mcommit 199866a3b2cd01a3b7a823d6d071888c45e77bce[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 9 06:15:02 2023 +0000
+
+    Refector: Add Branch processing on signup function
+
+[33mcommit c48fc88bb5e27af5f3925370a2926a5f33c0ea9d[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 9 04:38:36 2023 +0000
+
+    Feat: Make Table for list of registered users
+
+[33mcommit cc3ec65db60feaa95cc976798e9740a0a5842840[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 8 09:05:33 2023 +0000
+
+    Refector: Add process after click Register button
+
+[33mcommit d338c51df8a32b88cf150693fa4e6d59df838dad[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 8 08:34:25 2023 +0000
+
+    Style: Change transition animation to translateX from rotate
+
+[33mcommit 39363e95edf95bdf6b82b3dcaea4b0fd7aec5e16[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 8 07:52:47 2023 +0000
+
+    Chore: Fix label
+
+[33mcommit 653ae226f9afe26a5db984a1fc2532ee716c09ea[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 8 07:42:48 2023 +0000
+
+    Style: Add divbox for back of formbox
+
+[33mcommit 956b379988cc9100b1e54f87153a2759e366881b[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 8 06:30:32 2023 +0000
+
+    Feat: Add New Register form and showing animation
+
+[33mcommit 48b5253b27a91bcb6b4328e5aefa9aaeb7fdc361[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Tue Apr 4 13:13:04 2023 +0000
+
+    Feat: Add alert messege when failed login
+
+[33mcommit a19da71a822ed6f299cfa57090b5738537742c1b[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 2 12:33:32 2023 +0000
+
+    Feat: Redirect to login page if not logined yet
+
+[33mcommit 2a61a53ecc8b686f969633089b0d0f193c995ac9[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 2 12:28:03 2023 +0000
+
+    Feat: Add login function
+
+[33mcommit d5ba54b80d843ef59f43aeb4ba5fdf8cbd8fc598[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 2 11:59:33 2023 +0000
+
+    Style: Add login form with animation
+
+[33mcommit fc9e26c246884138f4c9df3cfb8a5fd945face9e[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sun Apr 2 10:10:45 2023 +0000
+
+    Style: Add reset CSS file
+
+[33mcommit 1ac03f07698eb846afb44ca8c3b9e5742ff0d6d8[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 03:58:31 2023 +0000
+
+    Style: Add root color and font
+
+[33mcommit 8a10652245d42da43c820d9841324c34e9122adf[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 03:23:33 2023 +0000
+
+    Feat: Add page routing in App.tsx
+
+[33mcommit 6021a3d7e25e73e1b755765be66d2ca07c4d2c2e[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 03:04:24 2023 +0000
+
+    Chore: Clean up init files
+
+[33mcommit 5d9e9ff3e4d0cf7b062cef5b7770972fe8bc401d[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 02:46:25 2023 +0000
+
+    Chore: Change script in package.json for running with port 80
+
+[33mcommit e12a44df07330b3cf0d35aefb0992d1fdccae47b[m
+Merge: 9dc0d0e a78492b
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 02:36:00 2023 +0000
+
+    Merge remote-tracking branch 'origin/main'
+
+[33mcommit 9dc0d0e25e2609a9a383972b2a7884fe9d57ef00[m
+Author: s2alua <s2alua.fu@gmail.com>
+Date:   Sat Apr 1 02:31:30 2023 +0000
+
+    init
+
+[33mcommit a78492bca15c210c0e558080ddb67b3dfe96c138[m
+Author: Eun-chong, LIM <101490650+LiS2Lim@users.noreply.github.com>
+Date:   Sat Apr 1 11:22:09 2023 +0900
+
+    Update README.md
+
+[33mcommit bd401e060be5d25262fef06dd5c6e1fa137ab738[m
+Author: Eun-chong, LIM <101490650+LiS2Lim@users.noreply.github.com>
+Date:   Sat Apr 1 10:35:06 2023 +0900
+
+    Initial commit

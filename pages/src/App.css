@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+:root {
+	/* color */
+	--main-color: #FFF;
+	--sub-color: #A6BEF5;
+	--point-color: #B49EFA;
+}
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+}
