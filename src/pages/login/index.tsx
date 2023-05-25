@@ -115,9 +115,17 @@ export default () => {
 					<h2>新規登録</h2>
 					<div className='inputBox'>
 						<input type='text' onChange={(e)=>{setEmail(e.target.value)}} value={email} required />
-						<input type='text' onChange={(e)=>{setPassword(e.target.value)}} value={password} required />
-						<input type='text' onChange={(e)=>{setUserName(e.target.value)}} value={userName} required />
 						<span>メールアドレス</span>
+						<i></i>
+					</div>
+					<div className='inputBox'>
+						<input type='text' onChange={(e)=>{setPassword(e.target.value)}} value={password} required />
+						<span>パスワード</span>
+						<i></i>
+					</div>
+					<div className='inputBox'>
+						<input type='text' onChange={(e)=>{setUserName(e.target.value)}} value={userName} required />
+						<span>ユーザー名</span>
 						<i></i>
 					</div>
 					<div className='links'>
